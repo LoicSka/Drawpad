@@ -12,6 +12,13 @@
 		324DAB7C1F2F918B00739DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324DAB7A1F2F918A00739DA7 /* Main.storyboard */; };
 		324DAB7E1F2F918B00739DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324DAB7D1F2F918B00739DA7 /* Assets.xcassets */; };
 		324DAB811F2F918B00739DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324DAB7F1F2F918B00739DA7 /* LaunchScreen.storyboard */; };
+		324DAB9D1F30684900739DA7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DAB9C1F30684900739DA7 /* UIColor.swift */; };
+		324DAB9F1F306F0F00739DA7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DAB9E1F306F0F00739DA7 /* UIView.swift */; };
+		324DABA11F30B24000739DA7 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DABA01F30B24000739DA7 /* Pulsing.swift */; };
+		324DABA41F30B2C900739DA7 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DABA31F30B2C900739DA7 /* ColorCollectionViewCell.swift */; };
+		324DABA61F30B2E300739DA7 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DABA51F30B2E300739DA7 /* BaseCollectionViewCell.swift */; };
+		324DABA81F30BE8500739DA7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324DABA71F30BE8500739DA7 /* String.swift */; };
+		EBC2C38A4C993761E2A01C89 /* Pods_Drawpad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BBCA6E1F6C4700C6C00348 /* Pods_Drawpad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		324DAB7D1F2F918B00739DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324DAB801F2F918B00739DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324DAB821F2F918B00739DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324DAB9C1F30684900739DA7 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		324DAB9E1F306F0F00739DA7 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		324DABA01F30B24000739DA7 /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
+		324DABA31F30B2C900739DA7 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		324DABA51F30B2E300739DA7 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		324DABA71F30BE8500739DA7 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		ADE2D858749A7BD33E51D9F1 /* Pods-Drawpad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawpad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drawpad/Pods-Drawpad.debug.xcconfig"; sourceTree = "<group>"; };
+		C8466CCDB9372AC23767B11B /* Pods-Drawpad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawpad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drawpad/Pods-Drawpad.release.xcconfig"; sourceTree = "<group>"; };
+		E6BBCA6E1F6C4700C6C00348 /* Pods_Drawpad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drawpad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC2C38A4C993761E2A01C89 /* Pods_Drawpad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				324DAB751F2F918A00739DA7 /* Drawpad */,
 				324DAB741F2F918A00739DA7 /* Products */,
+				D8ECEF23A459C90CCF8CB5B2 /* Pods */,
+				B796987CE92A78E84A27BE00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,77 @@
 		324DAB751F2F918A00739DA7 /* Drawpad */ = {
 			isa = PBXGroup;
 			children = (
-				324DAB761F2F918A00739DA7 /* AppDelegate.swift */,
-				324DAB781F2F918A00739DA7 /* ViewController.swift */,
+				324DAB9A1F30681000739DA7 /* Utils */,
+				324DAB981F30529200739DA7 /* Sources */,
 				324DAB7A1F2F918A00739DA7 /* Main.storyboard */,
 				324DAB7D1F2F918B00739DA7 /* Assets.xcassets */,
 				324DAB7F1F2F918B00739DA7 /* LaunchScreen.storyboard */,
 				324DAB821F2F918B00739DA7 /* Info.plist */,
 			);
 			path = Drawpad;
+			sourceTree = "<group>";
+		};
+		324DAB981F30529200739DA7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				324DABA21F30B2A000739DA7 /* Views */,
+				324DAB991F3052B600739DA7 /* ViewControllers */,
+				324DAB761F2F918A00739DA7 /* AppDelegate.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		324DAB991F3052B600739DA7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				324DAB781F2F918A00739DA7 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		324DAB9A1F30681000739DA7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				324DAB9B1F30681D00739DA7 /* Extensions */,
+				324DABA01F30B24000739DA7 /* Pulsing.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		324DAB9B1F30681D00739DA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				324DAB9C1F30684900739DA7 /* UIColor.swift */,
+				324DAB9E1F306F0F00739DA7 /* UIView.swift */,
+				324DABA71F30BE8500739DA7 /* String.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		324DABA21F30B2A000739DA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				324DABA31F30B2C900739DA7 /* ColorCollectionViewCell.swift */,
+				324DABA51F30B2E300739DA7 /* BaseCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B796987CE92A78E84A27BE00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6BBCA6E1F6C4700C6C00348 /* Pods_Drawpad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8ECEF23A459C90CCF8CB5B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE2D858749A7BD33E51D9F1 /* Pods-Drawpad.debug.xcconfig */,
+				C8466CCDB9372AC23767B11B /* Pods-Drawpad.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324DAB851F2F918B00739DA7 /* Build configuration list for PBXNativeTarget "Drawpad" */;
 			buildPhases = (
+				236BF2FEC49104D9F19B9EFB /* [CP] Check Pods Manifest.lock */,
 				324DAB6F1F2F918A00739DA7 /* Sources */,
 				324DAB701F2F918A00739DA7 /* Frameworks */,
 				324DAB711F2F918A00739DA7 /* Resources */,
+				0F94E1C4F5AF42F7BB490285 /* [CP] Embed Pods Frameworks */,
+				E9B0AA28EFD340DB4E4DF09F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +181,7 @@
 				TargetAttributes = {
 					324DAB721F2F918A00739DA7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 48FWN8V22H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +217,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F94E1C4F5AF42F7BB490285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drawpad/Pods-Drawpad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		236BF2FEC49104D9F19B9EFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B0AA28EFD340DB4E4DF09F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drawpad/Pods-Drawpad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		324DAB6F1F2F918A00739DA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324DABA41F30B2C900739DA7 /* ColorCollectionViewCell.swift in Sources */,
+				324DABA61F30B2E300739DA7 /* BaseCollectionViewCell.swift in Sources */,
+				324DAB9F1F306F0F00739DA7 /* UIView.swift in Sources */,
 				324DAB791F2F918A00739DA7 /* ViewController.swift in Sources */,
+				324DAB9D1F30684900739DA7 /* UIColor.swift in Sources */,
 				324DAB771F2F918A00739DA7 /* AppDelegate.swift in Sources */,
+				324DABA81F30BE8500739DA7 /* String.swift in Sources */,
+				324DABA11F30B24000739DA7 /* Pulsing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +398,10 @@
 		};
 		324DAB861F2F918B00739DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE2D858749A7BD33E51D9F1 /* Pods-Drawpad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48FWN8V22H;
 				INFOPLIST_FILE = Drawpad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drawpad.Drawpad;
@@ -270,8 +412,10 @@
 		};
 		324DAB871F2F918B00739DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8466CCDB9372AC23767B11B /* Pods-Drawpad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48FWN8V22H;
 				INFOPLIST_FILE = Drawpad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drawpad.Drawpad;
@@ -299,6 +443,7 @@
 				324DAB871F2F918B00739DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
